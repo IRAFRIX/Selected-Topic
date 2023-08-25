@@ -8,6 +8,8 @@ import {Table} from './event-data'
 import RefsClass from './refs-class'
 import RefsFunc from './refs-func'
 import RefsArray from './refs-array'
+import Cart from './state-class'
+import MessageBox from './state-func'
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
             <RefsClass/>
             <RefsFunc/>
             <RefsArray/>
+            <Cart/>
+            <MessageBox/>
             <p><center><Calendar/></center></p>
             <Content/>
             <h3 style={divStyle}> Hello Na World 
