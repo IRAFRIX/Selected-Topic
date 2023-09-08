@@ -1,8 +1,8 @@
 import React from 'react'
-import { userContext } from './context'
+import { useContext } from './context'
 
 export default class Header extends React.Component {
-    static contextType = userContext
+    static contextType = useContext
     
     render() {
         

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState,useContext} from 'react'
 import { Footer } from './func-components'
 import Calendar from './class-components'
 import Banner from './banner'
