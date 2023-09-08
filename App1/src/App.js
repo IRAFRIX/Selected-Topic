@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Content, Footer } from './func-components'
+import { Footer } from './func-components'
 import Calendar from './class-components'
 import Banner from './banner'
 import {Calculator} from './calculator'
@@ -10,6 +10,10 @@ import RefsFunc from './refs-func'
 import RefsArray from './refs-array'
 import Cart from './state-class'
 import MessageBox from './state-func'
+import { userContext } from './context'
+import Header from './context-header'
+import Content from './context-content'
+
 
 
 function App() {
@@ -21,13 +25,10 @@ function App() {
     }
     return ( 
         <>
-            <Header/>
             <Banner/>
-            <RefsClass/>
-            <RefsFunc/>
-            <RefsArray/>
-            <Cart/>
-            <MessageBox/>
+            <userContext.Provider value={'Tom Jerry'}>
+            <Header/>
+            </userContext.Provider>
             <p><center><Calendar/></center></p>
             <Content/>
             <h3 style={divStyle}> Hello Na World 
