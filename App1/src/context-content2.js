@@ -13,7 +13,7 @@ export default function UserProfile() {
 
   const onClickSignin = (event) => {
     event.preventDefault();
-    setUser('YourUsername'); // Replace 'YourUsername' with the desired username
+    setUser('IRAFRIX');
   };
 
   return (
