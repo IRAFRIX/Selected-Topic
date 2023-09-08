@@ -12,7 +12,7 @@ import Cart from './state-class'
 import MessageBox from './state-func'
 import { userContext } from './context'
 import Header from './context-header'
-import Content from './context-content'
+import Content from './context-content2'
 
 
 
@@ -28,9 +28,9 @@ function App() {
             <Banner/>
             <userContext.Provider value={'Tom Jerry'}>
             <Header/>
+            <Content/>
             </userContext.Provider>
             <p><center><Calendar/></center></p>
-            <Content/>
             <h3 style={divStyle}> Hello Na World 
                 <br/> สวัสดีนะจ๊ะ 
             </h3>
