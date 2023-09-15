@@ -21,7 +21,7 @@ import Content2 from './context-content2'
 function App() {
     const divStyle={
         color:'white',
-        backgroundColor:'powderblue',
+        backgroundColor:'black',
         fontSize:'larger',
         padding:'3px',
     }
