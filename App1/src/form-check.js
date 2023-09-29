@@ -69,7 +69,7 @@ export default function FromCheck (){
             <div className="form-check form-switch mt-3">
                 <input type="checkbox" id="sw" value="require"
                 className="form-check-input" ref={switchReq}/>
-                <label htmlFor="sw" className="form-check-label">Agree to term service.</label>
+                <label htmlFor="sw" className="form-check-label">Require select.</label>
             </div>
             <div className="text-center mt-4">
                 <button type="button" className="btn btn-sm px-4 btn-primary"
