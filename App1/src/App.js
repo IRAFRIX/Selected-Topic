@@ -20,12 +20,13 @@ import React, { useState,useContext} from 'react'
 import FormBootstrap from './form-bootstrap'
 import FormText from './form-text'
 import FormCheck from './form-check'
+import FormValidation from './form-validation';
 
 
 function App() {
    
     return ( 
-        <FormCheck/> 
+        <FormValidation/> 
     );
     
 }
