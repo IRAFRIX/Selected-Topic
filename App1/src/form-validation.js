@@ -101,6 +101,7 @@ export default function FormValidation() {
           />
         </div>
         <div>
+        <div>ออปชั่นเพิ่มเติม</div>
           {opts.map((opt, i) => {
             return (
               <div className="form-check form-check-inline mb-2" key={i}>
