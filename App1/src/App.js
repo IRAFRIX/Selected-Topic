@@ -21,13 +21,13 @@ import React, { useState,useContext} from 'react'
 // import FormText from './form-text'
 // import FormCheck from './form-check'
 // import FormValidation from './form-validation'
-import RestBasic from './rest-basic'
-
+//import RestBasic from './rest-basic'
+import FormGet from './form-get'
 
 function App() {
    
     return ( 
-        <RestBasic/> 
+        <FormGet/> 
     );
     
 }
