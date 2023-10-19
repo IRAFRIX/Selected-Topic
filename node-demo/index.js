@@ -1,19 +1,20 @@
 const express = require('express')
 const app = express()
 const port = 8000
-app.get('/',(request, response) => {
-response.send(`
-<!doctype html>
-<html>
-<head>
-<title>Express.js</title>
-</head>
-<body>
-<h3>Welcome to Express.js</h3>
-<b>Express.js Fast, unopinionated, minimalist <br>
-web framework for Node.js</b>
-</body>
-</html>
-`)
-})
-app.listen(port, () => console.log('Server listening on port'+port))
+app.use(express.urlencoded({extended: true}))
+app.use(express.json())
+app.use(express.static('public'))
+app.get('/api/form-get', (request, response) => {
+let t = request.query.target || ''
+let k = request.query.kw || ''
+let n = parseInt((Math.random() * 1000))
+let r = {
+    target: t,
+    kw: k,
+    results: n
+    }
+    response.json(r)
+    })
+    app.listen(port, () => {
+    console.log('Server listening on port ' + port)
+    })
