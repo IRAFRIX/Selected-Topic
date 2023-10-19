@@ -17,16 +17,17 @@ import React, { useState,useContext} from 'react'
 //import Content2 from './context-content2'
 //import Router2 from './router2'
 //import Router3 from './router3';
-import FormBootstrap from './form-bootstrap'
-import FormText from './form-text'
-import FormCheck from './form-check'
-import FormValidation from './form-validation';
+// import FormBootstrap from './form-bootstrap'
+// import FormText from './form-text'
+// import FormCheck from './form-check'
+// import FormValidation from './form-validation'
+import RestBasic from './rest-basic'
 
 
 function App() {
    
     return ( 
-        <FormValidation/> 
+        <RestBasic/> 
     );
     
 }
